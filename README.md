@@ -1,7 +1,9 @@
-* RotateFileHook
+# RotateFileHook
 
 This is a simple hook for logrus to write log files using https://github.com/natefinch/lumberjack
 
+
+```
 import ("github.com/snowzach/rotatefilehook")
 
 rotateFileHook, err := rotatefilehook.NewRotateFileHook(rotatefilehook.RotateFileConfig{
@@ -12,3 +14,4 @@ rotateFileHook, err := rotatefilehook.NewRotateFileHook(rotatefilehook.RotateFil
     Level: logrus.LevelDebug,
     Formatter: logrus.TextFormatter,
 })
+```

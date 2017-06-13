@@ -2,7 +2,7 @@ package rotatefilehook
 
 import (
     "io"
-    "github.com/Sirupsen/logrus"
+    "github.com/sirupsen/logrus"
     "gopkg.in/natefinch/lumberjack.v2"
 )
 

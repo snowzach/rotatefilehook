@@ -12,6 +12,7 @@ type RotateFileConfig struct {
 	MaxSize    int
 	MaxBackups int
 	MaxAge     int
+	Compress   bool
 	Level      logrus.Level
 	Formatter  logrus.Formatter
 }
@@ -31,6 +32,7 @@ func NewRotateFileHook(config RotateFileConfig) (logrus.Hook, error) {
 		MaxSize:    config.MaxSize,
 		MaxBackups: config.MaxBackups,
 		MaxAge:     config.MaxAge,
+		Compress:   config.Compress,
 	}
 
 	return &hook, nil
